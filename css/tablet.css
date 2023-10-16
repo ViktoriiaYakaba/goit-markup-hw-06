@@ -1,0 +1,44 @@
+ @media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx){
+   
+    .title-img{ background-image: url(../images/people-office-2x.jpg);
+    background: var(--GREY, rgba(46, 47, 66, 0.70));}
+  
+ }
+@media (mix-width: 768px) and (max-width: 1158px) {
+    .container {
+        max-width: 768px;
+        border: 2px solid tomato;
+    }
+    .contacts-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-shrink: 0;
+        gap: 12px;
+    }
+    .feature{
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+.feature-item{
+    visibility: hidden;
+}
+.feature-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.list-feature{
+    width: calc((100%-2*10px)/2);
+    margin-bottom: 72px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+
+}
