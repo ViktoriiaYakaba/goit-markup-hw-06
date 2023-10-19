@@ -20,9 +20,7 @@
     .title{
         padding: 112px 0;
     }
-    .title-img{
-        
-    }
+    
     .button{
         margin-top: 36px;
     }
@@ -69,6 +67,7 @@ text-align: left;
 
 .our-portfolio-list{
     gap: 72px 24px;
+    justify-content: center;
 }
 .list-portfolio{
     width: calc((100% - 72px) / 2);
@@ -80,29 +79,41 @@ text-align: left;
 
 .icon-footer{
     align-items: flex-start;
+    margin: 0 164px 30px 24px;
+    
    
 }
+.footer-social{
+    margin-bottom: 16px;
+}
+
 
 .footer-item{
     margin-left: 0;
+    margin-right: 0;
     
 }
 .footer-paragraf{
     margin-bottom: 0;
 }
-.modal-container{
-    margin-top: 72px;
-}
+
 .paragraf-subscribe{
     justify-content: flex-start;
+    
 }
 .form-subscribe{
     flex-wrap: nowrap;
 }
+/*-------------------------modal---------------------*/
 
-
-
+.modal-icon{
+    width: 408px;
+    min-height: 584px;
+}
 
 
 }
+
+
+
 

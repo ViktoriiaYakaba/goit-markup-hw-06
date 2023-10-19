@@ -246,6 +246,14 @@ letter-spacing: 0.02em;
     margin-left: 80px;
     margin-top: 0;
 }
+/*------------------------------modal-------------------------*/
+.modal-icon{
+    width: 408px;
+    min-height: 584px;
+}
+.input-icon-item{
+    
+}
 
 
 }
