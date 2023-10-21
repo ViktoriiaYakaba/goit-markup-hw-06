@@ -157,18 +157,17 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 overflow: auto;
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+}
 
-}
-.menu-open{
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
 .menu-page-nav{
     display: inline-flex;
     flex-direction: column;
-    align-items: ;
-    gap: ;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 72px;
 }
 .link-menu{
     color:  #2E2F42;
@@ -182,6 +181,28 @@ text-transform: capitalize;
 .link-menu:hover,
 .link-menu:focus{
     color:  #404BBF;
+}
+.menu-contacts-list{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 168px;
+}
+.menu-link-item{
+    color:  #434455;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.2; /* 120% */
+letter-spacing: 0.02em;
+}
+.menu-social{
+    display: inline-flex;
+align-items: flex-start;
+gap: 40px;
+margin-top: 48px;
 }
 
 
