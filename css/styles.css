@@ -907,7 +907,6 @@ margin-top: 48px;
 @media screen and (min-width: 768px) and (max-width: 1158px)  {
     .container {
         max-width: 768px;
-        border: 1px solid tomato;
     }
     .container-footer{
         margin-left: 108px;
