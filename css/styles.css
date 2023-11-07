@@ -166,7 +166,9 @@ pointer-events: none;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+
 }
+
 .btn-esc {
     position: absolute;
     right: 24px;
