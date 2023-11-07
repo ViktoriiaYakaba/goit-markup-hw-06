@@ -144,6 +144,7 @@ max-width: 320px;
     border: none;
     margin: auto;
 }
+
 .mob-menu{
 background-color: #FFFFFF;
 position: fixed;
@@ -160,6 +161,45 @@ overflow: auto;
 opacity: 0;
 visibility: hidden;
 pointer-events: none;
+}
+.mob-menu.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.btn-esc {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cornflower);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    background-color: #e7e9fc;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-esc-item {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-esc:hover,
+.btn-esc-modal:focus {
+    border: none;
+    background-color: #404bbf;
+}
+
+.btn-esc:hover .btn-esc-item,
+.btn-esc:focus .btn-esc-item {
+    fill: #ffffff
 }
 
 .menu-page-nav{
@@ -693,12 +733,18 @@ margin-top: 48px;
     visibility: hidden;
     pointer-events: none;
 }
-.is-open{
+.mob-menu.active {
     opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
+    visibility: visible;
+    pointer-events: auto;
+
 }
-.btn-esc .button {
+.backdrop.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.btn-esc-modal .button {
     margin-top: 24px;
 }
 
@@ -716,7 +762,7 @@ margin-top: 48px;
     padding: 72px 24px 24px 24px;
 }
 
-.btn-esc {
+.btn-esc-modal {
     position: absolute;
     right: 24px;
     top: 24px;
@@ -740,14 +786,14 @@ margin-top: 48px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-esc:hover,
-.btn-esc:focus {
+.btn-esc-modal:hover,
+.btn-esc-modal:focus {
     border: none;
     background-color: #404bbf;
 }
 
-.btn-esc:hover .btn-esc-item,
-.btn-esc:focus .btn-esc-item {
+.btn-esc-modal:hover .btn-esc-item,
+.btn-esc-modal:focus .btn-esc-item {
     fill: #ffffff
 }
 
